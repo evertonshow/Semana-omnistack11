@@ -1,0 +1,77 @@
+.profile-container{
+    width: 100%;
+    max-width: 1180px;
+    margin: 32px auto;
+    padding: 0 30px;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+header span{
+    font-size: 20px;
+    margin-left: 24px;
+}
+span img{
+    height: 64px;
+}
+/*.profile-container header a: 
+são duas maneiras de personalizar link de React ,do proprio */
+header .button{
+    margin-left: auto;
+    width: 260px;
+    margin-top: 0;
+}
+header button{
+    height: 60px;
+    width: 60px;
+    border: 1px solid #dcdce6;
+    border-radius: 4px;
+    background: transparent;
+    margin-left: 16px;
+    transition: border-color 0.4s;
+}
+header button:hover{
+border-color: #999;
+}
+h1{
+    margin-top: 80px;
+    margin-bottom: 24px;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-columns:1 fr 1fr ;*/
+    grid-gap: 20px;
+    list-style: none;
+}
+ul li{
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+}
+.profile-container ul li button{
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background: #fff;
+    border: 0;
+}
+ul li button:hover{
+    opacity: 0.8;
+}
+strong{
+margin-bottom: 16px;
+display: block;
+color: #41414d;
+}
+p + strong{
+    margin-top: 26px;
+}
+ul li p{
+    color: #737380;
+    font-size: 16px;
+    line-height: 21px;
+}
+

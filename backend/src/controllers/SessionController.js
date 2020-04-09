@@ -1,9 +1,10 @@
 const conection = require('../database/conection')
- module.exports = {
+
+module.exports = {
     async create (req,res){
         const { id } = req.body
 
-        const ong = await conection (' ongs')
+        const ong = await conection ('ongs')
         .where('id',id)
         .select('name')
         .first()

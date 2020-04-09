@@ -5,7 +5,7 @@ module.exports = {
     const ong_id = req.headers.authorization
 
     const incidents = await conection ('incidents')
-    .where('ongs_id',ongs_id)
+    .where('ong_id',ong_id)
     .select('*')
 
     return res.json(incidents)

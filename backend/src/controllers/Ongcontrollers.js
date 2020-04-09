@@ -22,5 +22,21 @@ module.exports ={
         });
     
         return res.json({ id })
+    },
+    async delete(req,res){
+        const { name} = req.params
+        const id = req.headers.authorization
+
+        const ong = await conection('ongs')
+        .where('id',id)
+        .select('*')
+        .first()
+
+        if (ong.id!= id) {
+            return res.status(401).json({erro: 'operation not permitted.' })
+             }
+             await conection('ongs').where('id',id).delete()
+
+             return res.status(204).send()
     }
 }
