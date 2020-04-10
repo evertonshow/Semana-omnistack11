@@ -1,1 +1,1 @@
-Um trabaho concluído com sucesso apesar de ualguns erro e demora consegui .
+Um trabaho concluído com sucesso apesar de alguns erro e demora pra consegui .
